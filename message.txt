@@ -1,0 +1,30 @@
+Hi Wes,
+
+I am the analytics engineer who has been working to get your team's new data assets up and running. I've spent the past couple days reviewing the files
+you all sent over, and I think I have a sense of how to proceed, but before I do, I wanted to run a few business logic and data quality questions by you.
+
+For data quality:
+1. I noticed that most of the data predates 2022, is that intentional?
+2. I was informed that all users had the role of customer, but I see some fetch staff in the data file as well: is this a problem?
+3. I have noticed many test data rows, which I assume we wouldn't want in the production data. I am programmatically deal with these data points and provide examples
+   but I wanted you to be aware they were in the data set if you weren't aware already
+4. The receipts data contains some receipts with no items, and the items themselves have duplicative fields for values such as price and quantity.
+
+For business logic:
+1. It would help me to know a bit more about user-flagged items on receipts: why that would happen, and how the review process works
+2. I can take a cursory look at points, but to interrogate them for accuracy, it would be helpful to know if there's any special context for their award and timing
+3. I am having a tough time wrapping my arms around how CPG collections and brands relate here, could you clarify?
+4. I am aware that you will want this data to help measure spend, transactions, and various descriptive stats on receipts by user, brand, and CPG collection, but are
+   there any use cases I am missing that might drastically change the way I tee up the data for you and your team?
+
+For scaling purposes:
+1. As the company matures, more people are uploading evermore receipts, and we collect more data, the number of receipts and receipt items might cause some scaling
+   issues. Is there a reasonable rolling window we could look at to provide the data you need while not exhausting resources?
+
+I appreciate your time and patience as we work through solving for your needs. Once we get back in touch, I will proceed with next steps, and then set up a quick chat
+to go over the shape of the data and answer any questions. 
+
+Also, We'll have to grab coffee next time I am in Boston!
+
+Best,
+Nathan
